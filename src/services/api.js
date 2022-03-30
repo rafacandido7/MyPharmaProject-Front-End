@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const { REACT_APP_API_URL } = process.env
+
 const api = axios.create({
-    baseURL: 'https://mpp-back-end.herokuapp.com/'
+    baseURL: REACT_APP_API_URL,
 })
 
 export default api;
